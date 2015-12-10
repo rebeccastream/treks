@@ -1,5 +1,6 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "base/base";
 
 /* Coolors Exported Palette - coolors.co/c9ffef-74e0e0-383484-abf149-ff6663 */
 
@@ -88,13 +89,15 @@ header h1#location {
 @include outer-container;
 @include omega();
 
+}
+
  div#date1{
    @include span-columns(12);
    @include shift(0);
    @include omega();
     background-color: rgba($color3, .9);
     min-height: 40rem;
-    padding: 2%;
+    padding: 3%;
  }
 
  div#date2{
@@ -103,7 +106,7 @@ header h1#location {
     @include omega();
     background-color: rgba($color2, .9);
     min-height: 40rem;
-    padding: 2%;
+    padding: 3%;
  }
 
  div#date3{
@@ -111,18 +114,58 @@ header h1#location {
    @include shift(0);
     background-color: rgba($color4, .9);
     min-height: 40rem;
-    padding: 2%;
+    padding: 3%;
  }
 
-  div#time {
-      @include span-columns(1);
-      min-height: 30rem;
-      text-align: right;
-  }
+ .table-itinerary {
+   $base-border-radius: 3px !default;
+   $base-line-height: 1.5rem !default;
+   $action-color: #477DCA !default;
+   $dark-gray: #333 !default;
+   $light-gray: #DDD !default;
+   $medium-screen: em(640) !default;
+   $large-screen: em(860) !default;
+   $table-padding: 1rem;
 
-  div#itinerary {
-    @include span-columns(11);
-    text-align: left;
-    min-height: 30rem;
-  }
-        }
+   border-collapse: separate;
+   border-spacing: 0;
+   width: 100%;
+
+     td {
+       border-bottom: 0px;
+       border-top: 0px;
+       line-height: $base-line-height;
+       padding: $table-padding;
+       color: $primary-text;
+       min-height: 30px;
+
+       button {
+         display: inline-block;
+         font-size: .7em;
+         line-height: $base-line-height;
+         margin-bottom: .3em;
+         margin-right: 0.5em;
+         outline: none;
+         padding: .3em 1em;
+         width: 100%;
+
+         @include media($medium-screen) {
+           margin-bottom: 0;
+           width: auto;
+         }
+       }
+     }
+}
+
+td .time {
+  width: 10%;
+  border-bottom: 0px;
+  font: lighter 2rem/110% $font-stack;
+
+}
+
+.content {
+  width: 90%;
+  border-bottom: 0px /*solid $table-border-color*/;
+  font: lighter 2.5rem/110% $font-stack;
+}
