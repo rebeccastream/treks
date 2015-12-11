@@ -229,7 +229,7 @@ h5 {
   h6 {
     font-size: 1.5rem; } }
 body {
-  background-color: #c9ffef;
+  background-color: #ff6663;
   margin: 0;
   padding: 0;
   font: 100% "proxima-nova", "Helvetica", sans-serif; }
@@ -250,7 +250,7 @@ header {
 header h1 {
   text-align: left;
   font: bold 5rem/85% "proxima-nova", "Helvetica", sans-serif;
-  color: #ff6663;
+  color: #41a864;
   position: fixed;
   top: -5px;
   left: -5px;
@@ -259,7 +259,7 @@ header h1 {
 header h1#location {
   text-align: left;
   font: bold italic 5.25rem/80% "ff-tisa-web-pro";
-  color: #ff6663;
+  color: #41a864;
   position: fixed;
   top: 195px;
   left: -3px;
@@ -282,7 +282,7 @@ div#date1 {
   width: 100%;
   margin-left: 0%;
   margin-right: 0;
-  background-color: rgba(56, 52, 132, 0.9);
+  background-color: rgba(0, 117, 162, 0.9);
   min-height: 40rem;
   padding: 3%; }
   div#date1:last-child {
@@ -295,7 +295,7 @@ div#date2 {
   width: 100%;
   margin-left: 0%;
   margin-right: 0;
-  background-color: rgba(116, 224, 224, 0.9);
+  background-color: rgba(201, 255, 239, 0.9);
   min-height: 40rem;
   padding: 3%; }
   div#date2:last-child {
@@ -307,7 +307,7 @@ div#date3 {
   margin-right: 2.35765%;
   width: 100%;
   margin-left: 0%;
-  background-color: rgba(171, 241, 73, 0.9);
+  background-color: rgba(0, 78, 100, 0.9);
   min-height: 40rem;
   padding: 3%; }
   div#date3:last-child {
